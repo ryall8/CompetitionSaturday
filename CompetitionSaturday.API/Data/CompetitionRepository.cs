@@ -22,18 +22,21 @@ namespace CompetitionSaturday.API.Data
             _context.Remove(entity);
         }
 
-        public async Task<User> GetUser(int id)
+        public async Task<Competition> GetCompetition(int id)
         {
-            var user = await _context.Users.Include(p => p.Photo).FirstOrDefaultAsync(u => u.Id == id);
+            var competition = await _context.Competitions.Include(competition => competition.Competitors)
+                                                          .ThenInclude(competitors => competitors.User)
+                                                          .ThenInclude(competitor => competitor.Photo)
+                                                          .FirstOrDefaultAsync(c => c.Id == id);
 
-            return user;
+            return competition;
         }
 
-        public async Task<IEnumerable<User>> GetUsers()
+        public async Task<IEnumerable<Competition>> GetCompetitions()
         {
-            var users = await _context.Users.Include(p => p.Photo).ToListAsync();
+            var competitions = await _context.Competitions.ToListAsync();
 
-            return users;
+            return competitions;
         }
 
         public async Task<bool> SaveAll()

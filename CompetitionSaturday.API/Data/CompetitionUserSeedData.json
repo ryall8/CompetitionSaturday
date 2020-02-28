@@ -1,0 +1,62 @@
+[
+  {
+    "UserId": "1",
+    "CompetitionId": "1",
+    "DateAdded" : "2019-09-24"
+  },
+  {
+    "UserId": "2",
+    "CompetitionId": "1",
+    "DateAdded" : "2019-09-24"
+  },
+    {
+    "UserId": "3",
+    "CompetitionId": "1",
+    "DateAdded" : "2019-09-24"
+  },
+  {
+    "UserId": "4",
+    "CompetitionId": "1",
+    "DateAdded" : "2019-01-24"
+  },
+  {
+    "UserId": "3",
+    "CompetitionId": "2",
+    "DateAdded" : "2019-02-24"
+  },
+  {
+    "UserId": "4",
+    "CompetitionId": "2",
+    "DateAdded" : "2019-03-24"
+  },
+  {
+    "UserId": "5",
+    "CompetitionId": "2",
+    "DateAdded" : "2019-04-24"
+  },
+  {
+    "UserId": "5",
+    "CompetitionId": "3",
+    "DateAdded" : "2019-05-24"
+  },
+  {
+    "UserId": "6",
+    "CompetitionId": "3",
+    "DateAdded" : "2019-06-24"
+  },
+  {
+    "UserId": "7",
+    "CompetitionId": "4",
+    "DateAdded" : "2019-07-24"
+  },
+  {
+    "UserId": "8",
+    "CompetitionId": "4",
+    "DateAdded" : "2019-08-24"
+  },
+  {
+    "UserId": "9",
+    "CompetitionId": "5",
+    "DateAdded" : "2019-09-24"
+  }
+]

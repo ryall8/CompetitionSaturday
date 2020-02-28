@@ -36,5 +36,36 @@ namespace CompetitionSaturday.API.Data
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
             }
         }
+        
+        public static void SeedCompetitions(DataContext context)
+        {
+            if (!context.Competitions.Any())
+            {
+                var competitionData = System.IO.File.ReadAllText("Data/CompetitionSeedData.json");
+                var competitions = JsonConvert.DeserializeObject<List<Competition>>(competitionData);
+                foreach (var competition in competitions)
+                {
+                    competition.Name = competition.Name.ToLower();
+                    context.Competitions.Add(competition);
+                }
+
+                context.SaveChanges();
+            }
+        }
+
+        public static void SeedCompetitionUsers(DataContext context)
+        {
+            if (!context.CompetitionUsers.Any())
+            {
+                var competitorData = System.IO.File.ReadAllText("Data/CompetitionUserSeedData.json");
+                var competitors = JsonConvert.DeserializeObject<List<CompetitionUser>>(competitorData);
+                foreach (var competitor in competitors)
+                {
+                    context.CompetitionUsers.Add(competitor);
+                }
+
+                context.SaveChanges();
+            }
+        }
     }
 }

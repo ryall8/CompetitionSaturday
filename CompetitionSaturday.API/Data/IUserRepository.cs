@@ -4,12 +4,12 @@ using CompetitionSaturday.API.Models;
 
 namespace CompetitionSaturday.API.Data
 {
-    public interface ICompetitionRepository
+    public interface IUserRepository
     {
          void Add<T>(T entity) where T: class;
          void Delete<T>(T entity) where T: class;
          Task<bool> SaveAll();
-         Task<IEnumerable<Competition>> GetCompetitions();
-         Task<Competition> GetCompetition(int id);
+         Task<IEnumerable<User>> GetUsers();
+         Task<User> GetUser(int id);
     }
 }

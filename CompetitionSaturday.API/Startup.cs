@@ -38,6 +38,7 @@ namespace CompetitionSaturday.API
             services.AddCors();
             services.AddAutoMapper(typeof(CompetitionRepository).Assembly);
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICompetitionRepository, CompetitionRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options => {

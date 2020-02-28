@@ -21,6 +21,8 @@ namespace CompetitionSaturday.API
                     var context = services.GetRequiredService<DataContext>();
                     context.Database.Migrate();
                     Seed.SeedUsers(context);
+                    Seed.SeedCompetitions(context);
+                    Seed.SeedCompetitionUsers(context);
                 }
                 catch (Exception ex)
                 {

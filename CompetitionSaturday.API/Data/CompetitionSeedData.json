@@ -1,0 +1,47 @@
+[
+    {
+      "Name": "Ruth's competition",
+      "StreetAddress": "100 Test Street",
+      "City": "Dubois",
+      "StateCode": "Alaska",
+      "Zip": "97266-123",
+      "DateOfEvent": "2022-09-24",
+      "CreatedDate": "2017-04-09"
+    },
+    {
+      "Name": "Susanna's competition",
+      "StreetAddress": "100 Test Street",
+      "City": "Ahwahnee",
+      "StateCode": "Arkansas",
+      "Zip": "97266-123",
+      "DateOfEvent": "2022-05-31",
+      "CreatedDate": "2017-03-03"
+    },
+    {
+      "Name": "Tracey's competition",
+      "StreetAddress": "100 Test Street",
+      "City": "Whitewater",
+      "StateCode": "New York",
+      "Zip": "97266-123",
+      "DateOfEvent": "2022-01-14",
+      "CreatedDate": "2017-07-20"
+    },
+    {
+      "Name": "Paulette's competition",
+      "StreetAddress": "100 Test Street",
+      "City": "Twilight",
+      "StateCode": "Texas",
+      "Zip": "97266-123",
+      "DateOfEvent": "2022-02-02",
+      "CreatedDate": "2017-08-07"
+    },
+    {
+      "Name": "Jodi's competition",
+      "StreetAddress": "100 Test Street",
+      "City": "Virgie",
+      "StateCode": "Maine",
+      "Zip": "97266-123",
+      "DateOfEvent": "2022-03-13",
+      "CreatedDate": "2017-07-11"
+    }
+  ]

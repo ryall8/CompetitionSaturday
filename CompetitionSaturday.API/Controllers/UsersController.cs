@@ -13,9 +13,9 @@ namespace CompetitionSaturday.API.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly ICompetitionRepository _repo;
+        private readonly IUserRepository _repo;
         private readonly IMapper _mapper;
-        public UsersController(ICompetitionRepository repo, IMapper mapper)
+        public UsersController(IUserRepository repo, IMapper mapper)
         {
             _mapper = mapper;
             _repo = repo;
