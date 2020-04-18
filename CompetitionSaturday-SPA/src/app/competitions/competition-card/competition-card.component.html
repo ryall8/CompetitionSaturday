@@ -1,0 +1,17 @@
+<div class="card mb-12">
+  <div class="card-body">
+    <div class="card-title mb-2">
+      {{competition.name}}
+    </div>
+    <div class="card-subtitle mb-2 text-muted">
+      {{competition.city}}, {{competition.stateCode}}
+    </div>
+    <div class="card-text mb-2">
+      {{competition.eventDate}}
+    </div>
+    <ul class="list-inline member-icons animate text-right">
+      <li class=list-inline-item><button class="btn btn-primary" 
+        [routerLink]="['/competitions/', competition.id]">View Details</button></li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <div>
+              <strong>Location:</strong>
+              <p>
+                {{competition?.streetAddress}}
+                {{competition?.city}}, {{competition?.stateCode}} {{competition?.zip}}
+              </p>
+            </div>
+            <div>
+              <strong>Event Date:</strong>
+              <p>{{competition?.eventDate}}</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <div class="text-center">
+              <button class="btn btn-primary center w-100">Register</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="tab-panel">
+        <tabset class="competition-tabset">
+          <tab heading="Description">
+            <p>
+              Description text placeholder
+            </p>
+          </tab>
+          <tab heading="Events">
+            <p>
+              Events to go here.
+            </p>
+          </tab>
+          <tab heading="Competitors">
+            <p>
+              Competitors will go here.
+            </p>
+          </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>
+</div>
